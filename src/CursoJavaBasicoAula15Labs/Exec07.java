@@ -31,6 +31,7 @@ public class Exec07 {
 		} else if (num3 <= num1 && num3 <= num3) {
 			System.out.println("num1 é menor: " + num3);
 		}
+		//
 
 	}
 
