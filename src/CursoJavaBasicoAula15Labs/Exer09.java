@@ -8,13 +8,13 @@ public class Exer09 {
 		
 		Scanner scan = new Scanner(System.in);
 		
-		System.out.println("Entre com o primeiro número");
+		System.out.println("Entre com o primeiro número:");
 		int num1 = scan.nextInt();
 
-		System.out.println("Entre com o segundo número");
+		System.out.println("Entre com o segundo número:");
 		int num2 = scan.nextInt();
 
-		System.out.println("Entre com o terceiro número");
+		System.out.println("Entre com o terceiro número:");
 		int num3 = scan.nextInt();
 		
 		if (num1 <= num2 && num1 <= num3 && num2 <= num3 ) {
