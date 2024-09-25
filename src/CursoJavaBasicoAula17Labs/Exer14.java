@@ -24,6 +24,6 @@ public class Exer14 {
 		}
 		System.out.println("Pares: " + pares);
 		System.out.println("Pares: " + impares);
-	}//
+	}
 
 }
