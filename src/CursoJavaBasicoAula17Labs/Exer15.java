@@ -32,7 +32,7 @@ public class Exer15 {
 			segundo = proximo;
 			
 			System.out.println(proximo);
-		}
+		}//
 		
 	 }
 
