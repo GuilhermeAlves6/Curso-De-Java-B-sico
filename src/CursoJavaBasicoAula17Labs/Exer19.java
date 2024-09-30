@@ -28,6 +28,6 @@ public class Exer19 {
 		
 		System.out.println("Soma " + soma);
 		System.out.println("Média " + media);
-	}
+	}///
 
 }
