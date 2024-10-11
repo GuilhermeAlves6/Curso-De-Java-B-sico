@@ -2,12 +2,12 @@ package CursoJavaBasicoAula19Labs;
 
 import java.util.Scanner;
 
-public class Exer06 {
+public class Exer08 {
 
 	public static void main(String[] args) {
-
+		
 		Scanner scan = new Scanner(System.in);
-
+		
 		int[] vetorA = new int[10];
 		int[] vetorB = new int[vetorA.length];
 		int[] vetorC = new int[vetorA.length];
@@ -23,7 +23,7 @@ public class Exer06 {
 		}
 
 		for (int i = 0; i < vetorC.length; i++) {
-			vetorC[i] = vetorA[i] + vetorB[i];
+			vetorC[i] = vetorA[i] * vetorB[i];
 		}
 
 		System.out.println("Vetor A = ");
@@ -47,5 +47,7 @@ public class Exer06 {
 		}
 
 		System.out.println();
+	
 	}
+
 }
