@@ -42,4 +42,4 @@ public class Exer15 {
 		System.out.println("Porcenetagem Pares: " + porcPar);
 		System.out.println("Porcenetagem Impares: " + porcImpar);
 	}
-}
+}//
