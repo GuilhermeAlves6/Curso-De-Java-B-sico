@@ -43,7 +43,7 @@ public class Exer01 {
 			System.out.println("Linha = " + linha);
 			System.out.println("Coluna = " + col);
 
-		}//
+		}///
 
 	}
 
