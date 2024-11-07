@@ -17,8 +17,7 @@ public class Exer06 {
 		int jogada = 1;
 		char sinal;
 		int linha = 0, coluna = 0;
-		
-		
+
 		while (!ganhou) {
 
 			if (jogada % 2 == 1) {
@@ -28,26 +27,31 @@ public class Exer06 {
 				System.out.println("Vez do jogador 2.Escolha linha e coluna(1-3)");
 				sinal = 'O';
 			}
-			
+
 			boolean linhaValida = false;
 			while (!linhaValida) {
 				System.out.println("Entre com a linha (1,2 ou 3)");
 				linha = scan.nextInt();
-				if (linha >=1 && linha <=3) {
+				if (linha >= 1 && linha <= 3) {
 					linhaValida = true;
-				}else {
+				} else {
 					System.out.println("Entrada inválida,tente novamente");
 				}
 			}
-			
-			boolean colunaValida = false;
-			while(!colunaValida) {
-				System.out.println();
-			}
-			
-			
 
-		}////
+			boolean colunaValida = false;
+			while (!colunaValida) {
+				System.out.println("Entre com a coluna(1,2 ou 3)");
+				coluna = scan.nextInt();
+				if (coluna >= 1 && coluna <= 3) {
+					linhaValida = true;
+				}else {
+					System.out.println("Entre inválida,tente novamente");
+				}
+
+			}
+
+		}
 
 	}
 }
