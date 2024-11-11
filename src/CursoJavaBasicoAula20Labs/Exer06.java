@@ -50,6 +50,8 @@ public class Exer06 {
 				}
 
 			}
+			
+			//verifica poisção válida
 			linha--;
 			coluna--;
 			if (jogoVelha[linha][coluna] == 'X' || jogoVelha[linha][coluna] == 'O') {
