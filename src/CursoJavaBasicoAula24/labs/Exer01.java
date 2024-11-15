@@ -12,6 +12,8 @@ public class Exer01 {
 		lampada.cor = "Amarela";
 		lampada.tipoLuz = "Amarela";
 		lampada.tipoAbajur = true;
+		
+		lampada.tipos = new String[5];
 		lampada.tipos[0] = "Abajur";
 		lampada.tipos[1] = "Lampeões";
 		
