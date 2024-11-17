@@ -17,9 +17,7 @@ public static void main(String[] args) {
 		livro.emprestadoA = "Loiane";
 		
 		System.out.println("Nome do livro = " + livro.nome);
-		
-		
 
-	}///
+	}
 
 }
