@@ -4,7 +4,7 @@ public class Carro {
 	
 	String marca;
 	String modelo;
-	int numPassageiro;
+	int numPassageiros;
 	double capCombustivel;
 	double consumoCombustivel;
 

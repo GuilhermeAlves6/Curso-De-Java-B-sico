@@ -6,7 +6,7 @@ public class TesteCarro {
 		 Carro van = new Carro();
 		 van.marca = "Fiat";
 		 van.modelo = "Ducato";
-		 van.numPassageiro = 10;
+		 van.numPassageiros = 10;
 		 van.capCombustivel = 100;
 		 van.consumoCombustivel = 0.2;
 		 
@@ -16,7 +16,7 @@ public class TesteCarro {
 		 Carro fusca = new Carro();
 		 van.marca = "Volkswagen";
 		 van.modelo = "Fusca";
-		 van.numPassageiro = 4;
+		 van.numPassageiros = 4;
 		 van.capCombustivel = 30;
 		 van.consumoCombustivel = 0.15;
 

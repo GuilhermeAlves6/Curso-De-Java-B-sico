@@ -9,7 +9,7 @@ public class TesteCarro {
 		Carro van = new Carro();
 		 van.marca = "Fiat";
 		 van.modelo = "Ducato";
-		 van.numPassageiro = 10;
+		 van.numPassageiros = 10;
 		 van.capCombustivel = 100;
 		 van.consumoCombustivel = 0.2;
 		 
