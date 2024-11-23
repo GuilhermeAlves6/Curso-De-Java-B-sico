@@ -18,6 +18,6 @@ public class Carro {
 		System.out.println("Método obterAutonomia foi cahamdo");
 		
 		return capCombustivel * consumoCombustivel;
-	}//comentario
+	}
 
 }
