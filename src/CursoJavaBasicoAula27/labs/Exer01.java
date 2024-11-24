@@ -8,20 +8,15 @@ public class Exer01 {
 
 		lampada.ligar();
 
-		if (lampada.ligada) {
-			System.out.println("Lâmpada esta ligada");
-		} else {
-			System.out.println("Lâmpada está desligada");
-
-		}
+		lampada.mostrarEstado();
+		
 		lampada.desligar();
 
-		if (lampada.ligada) {
-			System.out.println("Lâmpada esta ligada");
-		} else {
-			System.out.println("Lâmpada está desligada");
-
-		}////
+		lampada.mostrarEstado();
+		
+		lampada.mudarEstado();
+		
+		lampada.mostrarEstado();
 
 	}
 }
