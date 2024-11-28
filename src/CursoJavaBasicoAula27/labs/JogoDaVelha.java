@@ -7,7 +7,7 @@ public class JogoDaVelha {
 
 	boolean validarJogada(int linha, int coluna, char sinal){
 			
-			if(jogoVelha[linha][coluna] == sinal || jogoVelha [linha][coluna] == '0') {
+			if(jogoVelha[linha][coluna] == 'X' || jogoVelha [linha][coluna] == '0') {
 				return false;
 			}else { //jogada válida
 				jogoVelha[linha][coluna] = sinal;
@@ -18,7 +18,7 @@ public class JogoDaVelha {
 	
 	void imprimirTabuleiro() {
 		for (int i=0; i<jogoVelha.length; i++) {
-			for (int j=0; j<jogoVelha[j].length; i++) {
+			for (int j=0; j<jogoVelha[i].length; j++) {
 				System.out.print(jogoVelha[i][j] + " | ");
 			}
 			System.out.println();
