@@ -7,7 +7,7 @@ public class JogoDaVelha {
 
 	boolean validarJogada(int linha, int coluna, char sinal){
 			
-			if(jogoVelha[linha][coluna] == 'X' || jogoVelha [linha][coluna] == '0') {
+			if(jogoVelha[linha][coluna] == sinal || jogoVelha [linha][coluna] == '0') {
 				return false;
 			}else { //jogada válida
 				jogoVelha[linha][coluna] = sinal;
@@ -15,5 +15,36 @@ public class JogoDaVelha {
 				return true;
 			}
 		}
+	
+	void imprimirTabuleiro() {
+		for (int i=0; i<jogoVelha.length; i++) {
+			for (int j=0; j<jogoVelha[j].length; i++) {
+				System.out.print(jogoVelha[i][j] + " | ");
+			}
+			System.out.println();
+		}
+	}
+	
+	boolean verificarGanhador(char sinal) {
+		if ((jogoVelha[0][0] == sinal && jogoVelha[0][1] == sinal && jogoVelha[0][2] == sinal) || // linha 1
+				(jogoVelha[1][0] == sinal && jogoVelha[1][1] == sinal && jogoVelha[1][2] == sinal) || // linha 2
+				(jogoVelha[2][0] == sinal && jogoVelha[2][1] == sinal && jogoVelha[2][2] == sinal) || // linha 3
+				(jogoVelha[0][0] == sinal && jogoVelha[1][0] == sinal && jogoVelha[2][0] == sinal) || // coluna 1
+				(jogoVelha[0][1] == sinal && jogoVelha[1][1] == sinal && jogoVelha[2][1] == sinal) || // coluna 2
+				(jogoVelha[0][2] == sinal && jogoVelha[1][2] == sinal && jogoVelha[2][2] == sinal) || // coluna 3
+				(jogoVelha[0][0] == sinal && jogoVelha[1][1] == sinal && jogoVelha[2][2] == sinal)) { // diagonal
+			
+			return true;
+		}
+		return false;
+	}
+	
+	boolean vezJogador1() {
+		if (jogada % 2 == 1){
+			return true;
+		}
+		return false;
+		
+	}
 	
 }
