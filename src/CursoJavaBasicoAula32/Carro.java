@@ -7,6 +7,7 @@ public class Carro {
 	private int numPassageiros;
 	private double capCombustivel;
 	private double consumoCombustivel;
+	
 	public String getMarca() {
 		return marca;
 	}
