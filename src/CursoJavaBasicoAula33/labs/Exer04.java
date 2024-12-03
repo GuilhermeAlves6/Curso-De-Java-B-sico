@@ -1,11 +1,14 @@
-package CursoJavaBasicoAula27.labs;
+package CursoJavaBasicoAula33.labs;
 
 import java.util.Scanner;
+
+import CursoJavaBasicoAula27.labs.JogoDaVelha;
 
 public class Exer04 {
 
 	public static void main(String[] args) {
-
+		
+		
 		Scanner scan = new Scanner(System.in);
 
 		JogoDaVelha jogoDaVelha = new JogoDaVelha();
@@ -44,7 +47,7 @@ public class Exer04 {
 			} else if (jogoDaVelha.verificarGanhador('0')) {
 				ganhou = true;
 				System.out.println("Parabéns,jogador 2 ganhou!");
-			}else if (jogoDaVelha.jogada > 9) {
+			}else if (jogoDaVelha.getJogada() > 9) {
 				ganhou = true;
 				System.out.println("Ninguém ganhou essa partida.");
 			}
@@ -67,4 +70,9 @@ public class Exer04 {
 		valor--;
 		return valor;
 	}
-}
+	}
+		
+
+	
+
+

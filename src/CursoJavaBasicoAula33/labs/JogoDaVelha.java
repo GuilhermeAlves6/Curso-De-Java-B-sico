@@ -1,26 +1,41 @@
-package CursoJavaBasicoAula27.labs;
+package CursoJavaBasicoAula33.labs;
 
 public class JogoDaVelha {
-
-	char[][] jogoVelha;
-	int jogada;
+	
+	private char [][] jogoVelha;
+	private int jogada;
 	
 	public JogoDaVelha() {
 		jogoVelha = new char[3][3];
 		jogada = 1;
-		}
-	
+	}
 
+	public char[][] getJogoVelha() {
+		return jogoVelha;
+	}
+
+	public void setJogoVelha(char[][] jogoVelha) {
+		this.jogoVelha = jogoVelha;
+	}
+
+	public int getJogada() {
+		return jogada;
+	}
+
+	public void setJogada(int jogada) {
+		this.jogada = jogada;
+	}
+	
 	public boolean validarJogada(int linha, int coluna, char sinal){
-			
-			if(jogoVelha[linha][coluna] == 'X' || jogoVelha [linha][coluna] == '0') {
-				return false;
-			}else { //jogada válida
-				jogoVelha[linha][coluna] = sinal;
-				jogada++;
-				return true;
-			}
+		
+		if(jogoVelha[linha][coluna] == 'X' || jogoVelha [linha][coluna] == '0') {
+			return false;
+		}else { //jogada válida
+			jogoVelha[linha][coluna] = sinal;
+			jogada++;
+			return true;
 		}
+	}
 	
 	public void imprimirTabuleiro() {
 		for (int i=0; i<jogoVelha.length; i++) {
@@ -52,11 +67,4 @@ public class JogoDaVelha {
 		return false;
 		
 	}
-
-
-	public int getJogada() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-	
 }
