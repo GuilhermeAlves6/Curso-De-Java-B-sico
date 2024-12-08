@@ -6,6 +6,6 @@ public class Exer02 {
 		
 		System.out.println(Calculadora.somatorio(5));
 
-	}///
+	}/////
 
 }
