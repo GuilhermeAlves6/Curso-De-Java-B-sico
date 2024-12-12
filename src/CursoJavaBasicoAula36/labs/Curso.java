@@ -4,6 +4,6 @@ public class Curso {
 	
 	private String nome;
 	private String horario;
-	private Professor professor;//
+	private Professor professor;////
 
 }
