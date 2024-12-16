@@ -26,6 +26,10 @@ public class Professor {
 		this.email = email;
 	}
 	
+	public String obterInfo() {
+		return "Professor = " + nome;
+	}
+	
 	
 	
 }
