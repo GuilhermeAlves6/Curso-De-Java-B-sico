@@ -52,7 +52,7 @@ public class Aluno {
 		for (double nota : notas) {
 			soma += nota;
 		}
-		return soma/4;
+		return soma/4;///
 	}
  
 }
