@@ -6,7 +6,7 @@ public class Teste {
 		
 		Aluno aluno = new Aluno();
 
-		Professor professor = new professor();//
+		Professor professor = new professor();////
 		
 		professor.get
 
