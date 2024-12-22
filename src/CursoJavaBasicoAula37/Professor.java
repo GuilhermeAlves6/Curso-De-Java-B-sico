@@ -1,6 +1,6 @@
 package CursoJavaBasicoAula37;
 
-public class Professor {
+public class Professor extends Pessoa {
 	
 
 	private double salario;

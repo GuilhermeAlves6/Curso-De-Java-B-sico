@@ -1,6 +1,6 @@
 package CursoJavaBasicoAula37;
 
-public class Aluno {
+public class Aluno extends Pessoa {
 	
 	
 	private String curso;
