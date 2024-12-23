@@ -14,11 +14,11 @@ public class Teste {
 		
 		//professor.getTelefoneCelular();
 		
-		Pessoa aluno new Aluno();
-		//aluno.get
+		//Pessoa aluno new Aluno();
+		//aluno.getClass()
 		
-		Pessoa professor = new Professor();
-		professor.getSala
+		//Pessoa professor = new Professor();
+		//professor.getSala
 
 	}
 
