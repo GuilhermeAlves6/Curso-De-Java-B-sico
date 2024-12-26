@@ -11,9 +11,9 @@ public class Teste {
 		Professor professor = new Professor();
 		
 		//exemplo 02
-		System.out.println(Contantes.URL_BLOG);
+		//System.out.println(Contantes.URL_BLOG);
 		//Constantes.URL_BLOG = "dasdsdasdas";
-		System.out.println(Contantes.URL_BLOG);
+		//System.out.println(Contantes.URL_BLOG);
 		
 		final int TOTAL = 1;
 		//total = total = 1;
