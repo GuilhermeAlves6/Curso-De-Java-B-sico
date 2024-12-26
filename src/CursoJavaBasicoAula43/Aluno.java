@@ -1,5 +1,8 @@
 package CursoJavaBasicoAula43;
 
+import java.util.Arrays;
+import java.util.Objects;
+
 public class Aluno  {
 
 	private String curso;
@@ -59,8 +62,39 @@ public class Aluno  {
 		System.out.println(this.obterEtiquetaEndereco());
 		
 	}
+
+	@Override
+	public String toString() {
+		return "Aluno [curso=" + curso + ", notas=" + Arrays.toString(notas) + "]";
+	}
+
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		
+		Aluno other = (Aluno) obj;
+		
+		if(curso.equalsIgnoreCase(getCurso())) {
+			return true;
+		}
+		return false;
+	}
+	
+	/*public String toString() {
+		String s = curso + "\n";
+		for (double nota : notas) {
+			s += nota + " ";
+		}
+		
+		return s;
 	
 	
-			
+	}*/
+	
+	
 
 }
