@@ -1,6 +1,11 @@
 package CursoJavaBasicoAula43.labs.exer01;
 
-public class ContaEspecial  extends ContaBancaria{
+
+
+
+
+
+/*public class ContaEspecial  extends ContaBancaria{
 	
 	private double limite;
 
@@ -37,4 +42,4 @@ public class ContaEspecial  extends ContaBancaria{
 	
 	
 
-}
+}*/
