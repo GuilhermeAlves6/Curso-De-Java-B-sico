@@ -24,7 +24,7 @@ import java.util.Calendar;
 		public String toString() {
 			String s = "ContaPoupança[";
 			s += " diaRendimento:" + diaRendimento;
-		    s += "; " + super.toString();
+		    s += " ; " + super.toString();
 		    s += "]" ;
 		    return s;
 		}
