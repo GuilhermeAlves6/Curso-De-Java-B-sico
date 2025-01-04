@@ -9,7 +9,12 @@ public class Animal {
 	private int patas;
 	private String cor;
 	private String ambiente;
-	private int velocidade;
+	private double velocidade;
+	
+	//(16)Criar um animal padrão com patas 4;
+	public Animal() {
+		this.patas = 4; 
+	}
 	
 	
 	//(6)gerar os getters and setters de Animal
@@ -43,10 +48,10 @@ public class Animal {
 	public void setAmbiente(String ambiente) {
 		this.ambiente = ambiente;
 	}
-	public int getVelocidade() {
+	public double getVelocidade() {
 		return velocidade;
 	}
-	public void setVelocidade(int velocidade) {
+	public void setVelocidade(double velocidade) {
 		this.velocidade = velocidade;
 	}
 	//(12)Gerar um ToString para Camelo

@@ -8,6 +8,7 @@ public class Peixe  extends Animal{
 	
 	//(7) Adicionar construtor para as caracteristica padrões do peixe 
 	public Peixe() {
+		super();
 		this.setPatas(0);
 		this.setAmbiente("Mar");
 		this.setCor("Cinzenta");

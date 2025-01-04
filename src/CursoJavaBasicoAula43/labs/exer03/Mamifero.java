@@ -8,7 +8,9 @@ public class Mamifero extends Animal{
 	
 	//(9)Gerar um construtor pois Mamífero tem umas características padrões
 	public Mamifero() {
+		super();
 		this.setCor("Castanho");
+		this.setAmbiente("Terra");
 		this.alimento = "Mel";
 	}
 	
