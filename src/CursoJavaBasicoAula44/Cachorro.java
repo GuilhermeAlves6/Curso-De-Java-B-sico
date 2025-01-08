@@ -1,7 +1,7 @@
 package CursoJavaBasicoAula44;
 
-//(3)Criar a classe Cachorro + Adicionar o Extends(Hierarquia) "Animal -> Mamífero -> Cachorro
-public class Cachorro extends Mamifero {
+//(3)Criar a classe Cachorro + Adicionar o Extends(Hierarquia) "Animal -> Mamífero -> Cachorro. Agora o Cachorro extende a classe mamífero e ele vai implementar um AnimalDomesticado,além de poder adicionar várias interfaces ao mesmo tempo
+public class Cachorro extends Mamifero implements AnimalDomesticado,AnimalEstimacao{
 	
 	//(11)Tem 2 atributos cachorro e raça
 	private int tamanho;
@@ -27,8 +27,30 @@ public class Cachorro extends Mamifero {
 		// TODO Auto-generated method stub
 		
 	}
+	
+	//(24)Implementação dos Métodos AnimalDomésticado (levarVeterinario e o EmitirSom) e AnimalEstimação (Brincar e LevarPassear)
 	@Override
 	public void emitirSom() {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void levarVeterinario() {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void alimentar() {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void brincar() {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void levarPassear() {
 		// TODO Auto-generated method stub
 		
 	}

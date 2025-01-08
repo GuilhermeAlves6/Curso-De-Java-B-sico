@@ -1,10 +1,10 @@
 package CursoJavaBasicoAula44;
 
-//(19) Criar a classe AnimalEstimação adicionar a ABSTRAÇÃO
-public abstract class AnimalEstimacao {
+//(19) Criar a classe AnimalEstimação e adicionar a abstração. Depois tirar a abstração e adicionar a INTERFACE
+public interface AnimalEstimacao {
 	
 	//(20)AnimalEstimação vai fazer as seguintes coisas.Adicionar o ABSTRATO
-	public abstract void brincar();
-	public abstract void levarPassear();
+	void brincar();
+	void levarPassear();
 
 }
