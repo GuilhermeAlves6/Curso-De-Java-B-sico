@@ -32,5 +32,5 @@ public class Teste {
 			System.out.println("Objeto do tipo Professor");
 		}
 		
-	}///
+	}
 }
