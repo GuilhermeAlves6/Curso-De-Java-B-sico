@@ -13,6 +13,14 @@ public class Quadrado extends Figura2D{
 	public void setLado(int lado) {
 		this.lado = lado;
 	}
+
+	//(30)Implementar todos os Métodos
+	@Override
+	public double calcularArea() {
+		
+		return lado * lado;
+		//return Math.pow(lado, 2);
+	}
 	
 	
 

@@ -13,6 +13,18 @@ public class Cubo extends Figura3D{
 	public void setLado(int lado) {
 		this.lado = lado;
 	}
+
+	//(33)Implementar todos os métodos
+	@Override
+	public double calcularArea() {
+		return 6 * (lado*lado);
+	}
+
+	@Override
+	public double calcularVolume() {
+		return lado * lado * lado;
+		//return Math.pow(lado, 3);
+	}
 	
 	
 

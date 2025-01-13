@@ -20,6 +20,12 @@ public class Triangulo extends Figura2D{
 		this.altura = altura;
 	}
 	
+	//(32)Implementar todos os métodos
+	@Override
+	public double calcularArea() {
+		return ((altura * base)/2);
+	}
+	
 	
 
 }
