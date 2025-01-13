@@ -42,7 +42,7 @@ public class Piramide extends Figura3D{
 
 	public void setBase(Figura2D base) {
 		Base = base;
-	}
+	}//
 	
 	
 
