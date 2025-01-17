@@ -1,4 +1,4 @@
-package CursoJavaBasicoAula47;
+package CursoJavaBasicoAula48;
 //(1)Criar a classe MultiplosCatch
 public class MultiplosCatch {
 	// (2)Adicionar o Public Static void main
