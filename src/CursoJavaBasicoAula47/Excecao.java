@@ -16,7 +16,7 @@ public class Excecao {
 			// (4)Sysout para ver em que momento a Exceção vai ocorrer
 			System.out.println("Antes da exception");
 			
-			// (5)Código que vai gerar uma Exceção
+			// (5)Código que vai gerar uma Exceção//No Final marcar para fazer o Debug
 			vetor[4] = 1;
 			
 			
