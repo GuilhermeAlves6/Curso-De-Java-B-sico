@@ -24,6 +24,6 @@ public class UsandoThrows {
 		double num = scan.nextDouble();
 		return num;
 		
-	}//
+	}
 
 }
