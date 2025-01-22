@@ -8,9 +8,74 @@ public class Teste {
 		// (8)Scanner é uma classe do Java que permite a leitura de entradas do usuário,
 				// como dados digitados no console
 		Scanner scan = new Scanner(System.in);	
-		// (30)Obter a opção do menu passando o Scanner
-		int opcao =  obterOpcaoMenu(scan);
+		Agenda agenda = new Agenda();
+		
+		int opcao = 1;
+		//(41)Enquando a opção for diferente de 3 a gente vai obter  a opção do menu
+		while(opcao != 3) {
+			// (30)Obter a opção do menu passando o Scanner
+			opcao = obterOpcaoMenu(scan);
+			//(31) 1 - Consultar contato na agenda
+			if (opcao == 1) { 
+				consultarContato(scan, agenda);
+			//(32) 2 - Adicionar Contato (Removido após alteração)//(33)Sair (Removido após alteração)//(40)Termina o programa - opcional (Removido após alteração)	
+			}else if (opcao == 2) {
+				adicionarContato(scan, agenda);
+	
+		    }
+
+		}
+		
 	}
+	//(37)Adicionar contatos na agenda
+	public static void adicionarContato(Scanner scan, Agenda agenda) {
+		try {
+		System.out.println("Criando um contato,entre com as informações");
+		String nome = lerInformacaoString(scan, "Entre com o nome do contato");
+		String telefone = lerInformacaoString(scan, "Entre com o telefone do contato");
+		String email = lerInformacaoString(scan, "Entre com o email do contato");
+		//(38)Criar um contato e instanciar o contato
+		Contato contato = new Contato();
+		contato.setNome(nome);
+		contato.setEmail(email);
+		contato.setTelefone(telefone);
+		
+		System.out.println("Contato a ser criado: ");
+		System.out.println(contato);
+		
+		//(39)Agenda adicionar/cheia
+			agenda.adicionarContato(contato);
+		} catch (AgendaCheiaException e) {
+			System.out.println(e.getMessage());
+			
+			System.out.println("Contatos da agenda");
+			System.out.println(agenda);
+		}
+
+	}
+	
+	//(36)Consultar o contato passando scanner scan e jogando try/catch aqui dentro
+	public static void consultarContato(Scanner scan, Agenda agenda) {
+		
+		String nomeContato = lerInformacaoString(scan, "Entre com o nome do contato a ser pesquisado:");
+		//(35)Adicionar o try/catch
+		try {
+			if (agenda.consultaContatoPorNome(nomeContato) >= 0) {
+				System.out.println("Contato existe");
+			}
+		} catch (ContatoNaoExisteException e) {
+			System.out.println(e.getMessage());
+		}
+		
+	}
+	
+	//(34)Ler a informação desejada - mensagem ao usuário
+	public static String lerInformacaoString(Scanner scan, String msg) {
+		System.out.println(msg);
+		String entrada = scan.nextLine();
+		return entrada;
+	}
+	
 	// (24)pedir as opções ao usuário
 	public static int obterOpcaoMenu(Scanner scan) {
 		// (25)adicionar um while quanto a entrada não for válida agente continua
